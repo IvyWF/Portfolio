@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/69285b19fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
     <title>Portfolio - Junior Web Developer - Wenfei Xu</title>
 </head>
 
@@ -10,32 +17,175 @@
     <header>
         <div class="nav-head">
             <img src="images/picture-header.jpg" alt="Wenfei Xu|Junior Web Developer">
-            <nav>
-                <ul>
-                    <li class="homepage">Home</li>
-                    <li class="profile"><a href="#aboutme">Profile</a></li>
-                    <li class="skill"><a href="#skills">Skills</a></li>
-                    <li class="portfolio"><a href="#projects">Portfolio</a></li>
-                    <li class="contact"><a href="#contactinfo">Contact</a></li>
-                </ul>
-            </nav>
+            <ul class="nav-head__navigation">
+                <li class="homepage"><a href="index.html">Home</a></li>
+                <li class="profile"><a href="#aboutme">Profile</a></li>
+                <li class="skill"><a href="#skills">Skills</a></li>
+                <li class="portfolio"><a href="#projects">Portfolio</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
         <section class="introduction">
-            <h1>Wenfei Xu</h1>
-            <p>Junior Web Developer|Front-end Developer</p>
-            <button>More about me...</button> 
+            <div class="bg-image"></div>
+
+            <div class="bg-text">
+                <h1>Wenfei Xu</h1>
+                <p id="typedtext">Junior Web Developer | Front-end Developer</p>
+            </div>
         </section>
 
         <section id="aboutme">
             <h2>About me</h2>
-            <article></article>
-            <aside>
-                <img src="images/photo-profile.jpg" alt="Wenfei Xu">
-            </aside>
+            <div class="presentation">
+                <div class="presentation__image">
+                    <img src="images/photo-profile.jpg" alt="Wenfei Xu">
+                </div>
+                <p class="presentation__text">
+                    Hello! My name is Wenfei Xu, Junior Web Developer.<br>
+                    After several years of work experience, I decided to move towards a field for which I discovered a passion: programming, more particularly the front-end development.<br>
+                    I have been following training courses on OpenClassrooms, the 1st European platform of online training, which allowed me to learn different programming languages, such as <strong>HTML5, CSS3, JavaScript, and React</strong> as well as their use through various practical cases.<br>
+                    
+                    <a href="#projects"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-right"></i><strong> To see my work...</strong></a>
+                </p>
+            </div>
         </section>
+
+        <section id="skills">
+            <div class="skills__heading-image">
+                <img src="images/programming-gbb51fabf2_1920.png" alt="coding">
+            </div>
+            <div class="skills__heading">
+                <h2>My skills</h2>
+                <p>
+                    I am constantly improving my skills. For me, the joy of this job is that you learn something new every day, especially if you are curious, and passionate.
+                </p>
+            </div>
+
+            <div class="skills-lists">
+                <div class="skills-list skills-list-1">
+                    <h3 class="">Front-end</h3> 
+                    
+                    <div class="skill">
+                        <p class="skill__name">HTML</p>
+                        <div class="skill__container">
+                            <div class="skill-bar"></div>
+                        </div>
+                    </div>
+  
+                    <div class="skill">
+                        <p class="skill__name">CSS/Sass</p>
+                        <div class="skill__container">
+                            <div class="skill-bar"></div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <p class="skill__name">JavaScript</p>
+                         <div class="skill__container">
+                            <div class="skill-bar skill-bar__1"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p class="skill__name">React</p>
+                        <div class="skill__container">
+                            <div class="skill-bar skill-bar__2"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills-list skills-list-2">
+                    <h3 class="">CMS and Frameworks</h3>       
+
+                    <div class="skill">
+                        <p class="skill__name">jQuery</p>
+                        <div class="skill__container">
+                            <div class="skill-bar skill-bar__3"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p class="skill__name">Bootstrap</p>
+                        <div class="skill__container">
+                            <div class="skill-bar skill-bar__4"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p class="skill__name">WordPress</p>
+                        <div class="skill__container">
+                            <div class="skill-bar skill-bar__5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects__heading-image">
+                <img src="images/programming-gbb51fabf2_1920.png" alt="coding">
+            </div>
+            <div class="pj-presentation">
+              <h2>Projects</h2>
+              <p>
+                Here are some examples of projects I have done during the training courses.
+              </p>
+            </div>
+            <div class="projects-list">
+                <div class="project project--1">
+                    <img class="project-image" src="images/Fisheye.png" alt="Fisheye">
+                    <div class="overlay">
+                        <div class="project-description">
+                            Website with Design on Figma<br>
+                            Languages: <strong>HTML5, CSS3, and JavaScript</strong>
+                        </div>
+                        <a href="https://ivywf.github.io/Fisheye/" class="primary-button">Live Website</a>
+                    </div>
+                </div>
+              
+                <div class="project project--2">
+                    <img class="project-image" src="images/Ohmyfood.png" alt="Ohmyfood">
+                    <div class="overlay">
+                        <div class="project-description">
+                            Dynamic website with CSS animations<br>
+                            Languages: <strong>HTML5, CSS3, and Sass</strong>
+                        </div>
+                        <a href="https://ivywf.github.io/Ohmyfood/" class="primary-button">Live Website</a>
+                    </div>
+                </div>
+
+                <div class="project project--3">
+                    <img class="project-image" src="images/GameOn.png" alt="GameOn">
+                    <div class="overlay">
+                        <div class="project-description">
+                            Registration form with JavaScript validation<br>
+                            Languages: <strong>HTML5, CSS3, and JavaScript</strong>
+                        </div>
+                        <a href="https://ivywf.github.io/GameonPage/" class="primary-button">Live Website</a>
+                    </div>
+                </div>
+            </div>
+          </section>
     </main>
+
+    <footer id="contact">
+        <div class="email">
+            <h2>Contact me</h2>
+            <p>Would you like to contact me?<br>
+               Just send me an e-mail to <a href="mailto:wenfei.xu.pro@gmail.com">wenfei.xu.pro@gmail.com</a> and I will make sure to answer you as soon as possible.</p>
+        </div>
+        <div class="footer__social">
+            <a href="https://github.com/IvyWF"><i class="fa-brands fa-square-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/wenfei-henry-xu/?locale=en_US"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright" aria-hidden="true"></i> Copyright 2023 - Wenfei Xu
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
