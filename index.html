@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Portfolio - Junior Web Developer - Wenfei Xu</title>
 </head>
 
@@ -46,12 +48,15 @@
                 <p class="presentation__text">
                     Hello! My name is Wenfei Xu, Junior Web Developer.<br>
                     After several years of work experience, I decided to move towards a field for which I discovered a passion: programming, more particularly the front-end development.<br>
-                    I have been following training courses on OpenClassrooms, the 1st European platform of online training, which allowed me to learn different programming languages, such as <strong>HTML5, CSS3, JavaScript, and React</strong> as well as their use through various practical cases.<br>
-                    
+                    I have been following training courses on OpenClassrooms, the 1st European platform of online training, which allowed me to learn different programming languages, such as <strong style="color: #4070f4;">HTML5, CSS3, JavaScript, and React</strong> as well as their use through various practical cases.
+                    <br>
+                    <br>
                     <a href="#projects"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-right"></i><strong> To see my work...</strong></a>
                 </p>
             </div>
         </section>
+
+        
 
         <section id="skills">
             <div class="skills__heading-image">
@@ -60,65 +65,84 @@
             <div class="skills__heading">
                 <h2>My skills</h2>
                 <p>
-                    I am constantly improving my skills. For me, the joy of this job is that you learn something new every day, especially if you are curious, and passionate.
+                    I am constantly improving my skills. For me, the joy of this job is that you learn something new every day,<br>
+                    especially if you are curious, and passionate.
                 </p>
             </div>
 
-            <div class="skills-lists">
-                <div class="skills-list skills-list-1">
-                    <h3 class="">Front-end</h3> 
-                    
-                    <div class="skill">
-                        <p class="skill__name">HTML</p>
-                        <div class="skill__container">
-                            <div class="skill-bar"></div>
+            <div class="skills__list">
+                <div class="listFT">
+                    <h3>Front-end</h3>
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+        
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <!--<span class="tooltip">95%</span>-->
+                            </span>
                         </div>
                     </div>
-  
-                    <div class="skill">
-                        <p class="skill__name">CSS/Sass</p>
-                        <div class="skill__container">
-                            <div class="skill-bar"></div>
-                        </div>
-                    </div>
-                
-                    <div class="skill">
-                        <p class="skill__name">JavaScript</p>
-                         <div class="skill__container">
-                            <div class="skill-bar skill-bar__1"></div>
+        
+                    <div class="skill-box">
+                        <span class="title">CSS/Sass</span>
+        
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <!--<span class="tooltip">95%</span>-->
+                            </span>
                         </div>
                     </div>
 
-                    <div class="skill">
-                        <p class="skill__name">React</p>
-                        <div class="skill__container">
-                            <div class="skill-bar skill-bar__2"></div>
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+            
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <!--<span class="tooltip">85%</span>-->
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">React</span>
+            
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <!--<span class="tooltip">50%</span>-->
+                            </span>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="skills-list skills-list-2">
-                    <h3 class="">CMS and Frameworks</h3>       
-
-                    <div class="skill">
-                        <p class="skill__name">jQuery</p>
-                        <div class="skill__container">
-                            <div class="skill-bar skill-bar__3"></div>
+                <div>
+                    <h3>CMS and Frameworks</h3>
+                    <div class="skill-box">
+                        <span class="title">jQuery</span>
+        
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <!--<span class="tooltip">70%</span>-->
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="skill-box">
+                        <span class="title">Bootstrap</span>
+        
+                        <div class="skill-bar">
+                            <span class="skill-per bar-animation bootstrap">
+                                <!--<span class="tooltip">65%</span>-->
+                            </span>
                         </div>
                     </div>
 
-                    <div class="skill">
-                        <p class="skill__name">Bootstrap</p>
-                        <div class="skill__container">
-                            <div class="skill-bar skill-bar__4"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p class="skill__name">WordPress</p>
-                        <div class="skill__container">
-                            <div class="skill-bar skill-bar__5"></div>
+                    <div class="skill-box">
+                        <span class="title">WordPress</span>
+            
+                        <div class="skill-bar">
+                            <span class="skill-per bar-animation wordpress">
+                                <!--<span class="tooltip">65%</span>-->
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -186,6 +210,6 @@
             <i class="fa-regular fa-copyright" aria-hidden="true"></i> Copyright 2023 - Wenfei Xu
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -35,4 +35,29 @@ let aText = new Array(
     
     
     typewriter();
+
+const animTrigger = document.querySelectorAll('.skill-per');
+
+const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('bar-animation');
+        } else {
+            entry.target.classList.remove('bar-animation');
+        }
+    })
+}, {
+    threshold: 0.5
+});
+
+for (let i = 0; i < animTrigger.length; i++) {
+    const el = animTrigger[i];
+
+    observer.observe(el);
+}
+
+
+      
+
+
   
